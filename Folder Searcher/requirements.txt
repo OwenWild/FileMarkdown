@@ -1,0 +1,5 @@
+requests
+PyMuPDF
+python-docx
+openpyxl
+Pillow
