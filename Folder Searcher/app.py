@@ -1368,7 +1368,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--analyze-images", action="store_true", help="Use the local vision model for selected images")
     parser.add_argument("--disable-ai", action="store_true", help="Skip local AI and write deterministic summaries only")
     parser.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL")
-    parser.add_argument("--model", default="gemma3:12b", help="Local model name in Ollama")
+    parser.add_argument("--model", default="qwen2.5:7b", help="Local model name in Ollama (~8B class tag for Qwen 2.5)")
     parser.add_argument("--inventory-json", default=None, help="Optional JSON manifest path")
     parser.add_argument("--max-text-file-mb", type=int, default=25, help="Do not extract text from files larger than this many MB")
     parser.add_argument("--max-excerpt-chars", type=int, default=12000, help="Max chars extracted per text-heavy file")
